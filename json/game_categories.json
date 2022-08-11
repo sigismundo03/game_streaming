@@ -1,0 +1,42 @@
+[
+        {
+            "nameCategorie":"Overwatch",
+            "imageSVG":"assets/svg/categories.svg"
+        },
+        {
+            "nameCategorie":"DOTA 2",
+            "imageSVG":"assets/svg/categories2.svg"
+        },
+        {
+            "nameCategorie":"League of legends",
+            "imageSVG":"assets/svg/categories1.svg"
+        },
+        {
+            "nameCategorie":"apex legends",
+            "imageSVG":"assets/svg/categories3.svg"
+        },
+        {
+            "nameCategorie":"Valorant",
+            "imageSVG":"assets/svg/categories4.svg"
+        },
+        {
+            "nameCategorie":"FIFA",
+            "imageSVG":"assets/svg/categories.svg"
+        },
+        {
+            "nameCategorie":"the hunter call of the wild",
+            "imageSVG":"assets/svg/categories.svg"
+        },
+        {
+            "nameCategorie":"the witcher 3",
+            "imageSVG":"assets/svg/categories.svg"
+        },
+        {
+            "nameCategorie":"CS GOL",
+            "imageSVG":"assets/svg/categories.svg"
+        },
+        {
+            "nameCategorie":"APEX",
+            "imageSVG":"assets/svg/categories.svg"
+        }
+    ]

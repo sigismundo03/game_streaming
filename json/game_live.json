@@ -1,0 +1,91 @@
+[
+        {
+            "nameGame": "theHunter Call of the Wild",
+            "nameAuthor": "Sigis",
+            "imageGame": "assets/image/theHunter Call of the Wild.jpeg",
+            "imageAuthor":"assets/svg/author3.svg",
+            "isTopStreamers":true,
+            "amountWatching": "1.5k"
+        },
+        {
+            "nameGame": "APEX",
+            "nameAuthor": "Ravi",
+            "imageGame": "assets/image/apex.jpeg",
+            "imageAuthor": "assets/svg/author2.svg",
+            "isTopStreamers":false,
+            "amountWatching": "3.5k"
+        },
+        {
+            "nameGame": "CS GOL",
+            "nameAuthor": "Rishab",
+            "imageGame": "assets/image/CSGOL.jpeg",
+            "imageAuthor": "assets/svg/author4.svg",
+            "isTopStreamers":false,
+            "amountWatching": "4.5k"
+        },
+        {
+            "nameGame": "Fortnite",
+            "nameAuthor": "Ravi",
+            "imageGame": "assets/image/fortnite.jpeg",
+            "imageAuthor": "assets/svg/author1.svg",
+            "isTopStreamers":false,
+            "amountWatching": "6.4k"
+        },
+        {
+            "nameGame": "Dota",
+            "nameAuthor": "Rishab",
+            "imageGame": "assets/image/dota.jpeg",
+            "imageAuthor": "assets/svg/author2.svg",
+            "isTopStreamers":false,
+            "amountWatching": "6.4k"
+        },
+        {
+            "nameGame": "theHunter Call of the Wild",
+            "nameAuthor": "Sigis",
+            "imageGame": "assets/image/theHunter Call of the Wild.jpeg",
+            "imageAuthor":"assets/svg/author3.svg",
+            "isTopStreamers":false,
+            "amountWatching": "1.5k"
+        },
+        {
+            "nameGame": "Valorant",
+            "nameAuthor": "Ravi",
+            "imageGame": "assets/image/valorant.jpeg",
+            "imageAuthor": "assets/svg/author2.svg",
+            "isTopStreamers":true,
+            "amountWatching": "3.5k"
+        },
+        {
+            "nameGame": "CS GOL",
+            "nameAuthor": "Rishab",
+            "imageGame": "assets/image/CSGOL.jpeg",
+            "imageAuthor": "assets/svg/author4.svg",
+            "isTopStreamers":true,
+            "amountWatching": "4.5k"
+        },
+        {
+            "nameGame": "Fortnite",
+            "nameAuthor": "Ravi",
+            "imageGame": "assets/image/fortnite.jpeg",
+            "imageAuthor": "assets/svg/author1.svg",
+            "isTopStreamers":false,
+            "amountWatching": "6.4k"
+        },
+        {
+            "nameGame": "Dota",
+            "nameAuthor": "Rishab",
+            "imageGame": "assets/image/dota.jpeg",
+            "imageAuthor": "assets/svg/author2.svg",
+            "isTopStreamers":false,
+            "amountWatching": "6.4k"
+        },
+        {
+            "nameGame": "the witcher",
+            "nameAuthor": "Ravi",
+            "imageGame": "assets/image/the witcher.jpeg ",
+            "imageAuthor": "assets/svg/author.svg",
+            "isTopStreamers":false,
+            "amountWatching": "9.4k"
+        }
+    ]
+    
