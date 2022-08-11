@@ -1,14 +1,11 @@
-import 'package:game_streaming/app/Domain/entities/game_categories.dart';
+import 'package:game_streaming/app/domain/entities/game_categories.dart';
+import 'package:game_streaming/app/domain/entities/game_live.dart';
 
 class WatchLive {
-  String image;
-  String amountWatching;
-  String isTopStreamers;
+  List<GameLive> listGameLive;
   List<GameCategories> listGameCategorie;
   WatchLive({
-    required this.image,
-    required this.amountWatching,
-    required this.isTopStreamers,
+    required this.listGameLive,
     required this.listGameCategorie,
   });
 }
