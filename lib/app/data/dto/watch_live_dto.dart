@@ -12,7 +12,7 @@ class WatchLiveDto extends WatchLive {
             listGameCategorie: listGameCategorieDto,
             listGameLive: listGameLiveDto);
 
-  factory WatchLiveDto.fromJson(
+  factory WatchLiveDto.fromMap(
       List<GameLive> listLive, List<GameCategories> listGameCategories) {
     return WatchLiveDto(
       listGameCategorieDto: listGameCategories,

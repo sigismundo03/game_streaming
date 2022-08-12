@@ -18,7 +18,7 @@ class SearchWatchLiveRemoteDataSourceImp
     final listLive = await _gameLiveDataSource.call();
 
     if (listLive.isRight && listcategories.isRight) {
-      return Right(WatchLiveDto.fromJson(
+      return Right(WatchLiveDto.fromMap(
         listLive.right,
         listcategories.right,
       ));

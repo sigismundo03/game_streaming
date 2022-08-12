@@ -12,6 +12,6 @@ class SearchGameLiveRemoteDataSource
   Future<Either<String, List<GameLive>>> call() async {
     final result = await rootBundle.loadString('json/game_live.json');
     final list = jsonDecode(result) as List;
-    return Right(list.map((e) => GameLiveDTO.fromJson(e)).toList());
+    return Right(list.map((e) => GameLiveDTO.fromMap(e)).toList());
   }
 }

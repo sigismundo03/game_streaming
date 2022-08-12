@@ -7,7 +7,7 @@ class GameLiveDTO extends GameLive {
   String nameAuthor;
   String imageGame;
   String imageAuthor;
-  String isTopStreamer;
+  bool isTopStreamer;
   String amountWatchings;
 
   GameLiveDTO({

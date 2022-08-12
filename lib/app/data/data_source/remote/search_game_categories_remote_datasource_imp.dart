@@ -12,6 +12,6 @@ class SearchGameCategoriesRemoteDataSource
   Future<Either<String, List<GameCategories>>> call() async {
     final result = await rootBundle.loadString('json/game_categories.json');
     final list = jsonDecode(result) as List;
-    return Right(list.map((e) => GameCategoriesDTo.fromJson(e)).toList());
+    return Right(list.map((e) => GameCategoriesDTo.fromMap(e)).toList());
   }
 }
