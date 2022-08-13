@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -76,6 +77,7 @@ class CustumBottomNavigatiobarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+        currentIndex: 1,
         unselectedItemColor: const Color(0xff7E7E7E),
         fixedColor: const Color(0xffF7B84B),
         backgroundColor: const Color(0xff000000),
@@ -86,11 +88,11 @@ class CustumBottomNavigatiobarWidget extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             label: 'Discover',
-            icon: Icon(Icons.favorite),
+            icon: Icon(Icons.explore),
           ),
           BottomNavigationBarItem(
             label: 'Browse',
-            icon: Icon(Icons.favorite),
+            icon: Icon(Icons.copy),
           ),
         ]);
   }
@@ -119,14 +121,100 @@ class GameLiveWidget extends StatelessWidget {
                   right: 17,
                 ),
                 child: Container(
-                  clipBehavior: Clip.hardEdge,
-                  width: 270,
-                  height: 150,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(16),
-                    color: const Color(0xff8B92DF),
-                  ),
-                ),
+                    clipBehavior: Clip.hardEdge,
+                    width: 270,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      color: const Color(0xff8B92DF),
+                    ),
+                    child: Stack(children: [
+                      Positioned.fill(
+                        child: FittedBox(
+                          fit: BoxFit.fill,
+                          child: Image.asset(
+                            "assets/image/fortnite.jpeg",
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 16,
+                        left: 15,
+                        child: Row(children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: const Color(0xffEB5757),
+                            ),
+                            child: const Center(
+                              child: Padding(
+                                padding: EdgeInsets.only(
+                                  bottom: 10,
+                                  top: 10,
+                                  left: 10,
+                                  right: 9,
+                                ),
+                                child: Text(
+                                  'LIVE',
+                                  style: TextStyle(
+                                    color: Color(0xffF2F2F2),
+                                    fontSize: 12,
+                                    height: 1,
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w600,
+                                    fontStyle: FontStyle.normal,
+                                    letterSpacing: 0.04,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: const Color(0xF2333333),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                bottom: 9,
+                                top: 9,
+                                left: 10,
+                                right: 10,
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: const [
+                                  Icon(
+                                    Icons.remove_red_eye,
+                                    color: Color(0xffE0E0E0),
+                                    size: 20,
+                                  ),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Text(
+                                    '8.1K',
+                                    style: TextStyle(
+                                      color: Color(0xffF2F2F2),
+                                      fontSize: 12,
+                                      height: 1,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w600,
+                                      fontStyle: FontStyle.normal,
+                                    ),
+                                    textAlign: TextAlign.start,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ]),
+                      ),
+                    ])),
               );
             }),
       ),
@@ -164,7 +252,15 @@ class GameCategoriesWidget extends StatelessWidget {
                       height: 60,
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(22)),
-                        color: Color(0xff8B92DF),
+                        color: Color.fromARGB(66, 250, 155, 30),
+                      ),
+                      child: IconButton(
+                        icon: SvgPicture.asset(
+                          'assets/svg/categories6.svg',
+                          height: 32,
+                          width: 32,
+                        ),
+                        onPressed: () {},
                       ),
                     ),
                     const SizedBox(
@@ -205,18 +301,104 @@ class TopLiveWidget extends StatelessWidget {
           itemBuilder: (context, index) {
             return Padding(
               padding: const EdgeInsets.only(
-                left: 16,
-                right: 16,
+                left: 17,
+                right: 17,
               ),
               child: Container(
-                clipBehavior: Clip.hardEdge,
-                width: 270,
-                height: 150,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  color: const Color(0xff8B92DF),
-                ),
-              ),
+                  clipBehavior: Clip.hardEdge,
+                  width: 270,
+                  height: 150,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(16),
+                    color: const Color(0xff8B92DF),
+                  ),
+                  child: Stack(children: [
+                    Positioned.fill(
+                      child: FittedBox(
+                        fit: BoxFit.fill,
+                        child: Image.asset(
+                          "assets/image/apex.jpeg",
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 16,
+                      left: 15,
+                      child: Row(children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color(0xffEB5757),
+                          ),
+                          child: const Center(
+                            child: Padding(
+                              padding: EdgeInsets.only(
+                                bottom: 10,
+                                top: 10,
+                                left: 10,
+                                right: 9,
+                              ),
+                              child: Text(
+                                'LIVE',
+                                style: TextStyle(
+                                  color: Color(0xffF2F2F2),
+                                  fontSize: 12,
+                                  height: 1,
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w600,
+                                  fontStyle: FontStyle.normal,
+                                  letterSpacing: 0.04,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: const Color(0xF2333333),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                              bottom: 9,
+                              top: 9,
+                              left: 10,
+                              right: 10,
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: const [
+                                Icon(
+                                  Icons.remove_red_eye,
+                                  color: Color(0xffE0E0E0),
+                                  size: 20,
+                                ),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                Text(
+                                  '8.1K',
+                                  style: TextStyle(
+                                    color: Color(0xffF2F2F2),
+                                    fontSize: 12,
+                                    height: 1,
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w600,
+                                    fontStyle: FontStyle.normal,
+                                  ),
+                                  textAlign: TextAlign.start,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ]),
+                    ),
+                  ])),
             );
           }),
     );
@@ -231,6 +413,7 @@ class SearchLive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Padding(
@@ -251,39 +434,32 @@ class SearchLive extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(
             left: 24,
-            right: 52,
+            right: 50,
             top: 0,
             bottom: 32,
           ),
-          child: TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderSide: const BorderSide(
-                  color: Color(0xffFFFFFF),
-                  //this has no effect
-                ),
-                borderRadius: BorderRadius.circular(16.0),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(
-                  color: Color(0xffFFFFFF),
-                  //this has no effect
-                ),
-                borderRadius: BorderRadius.circular(16.0),
-              ),
-              prefixIcon: const Icon(
+          child: TextFormField(
+            decoration: const InputDecoration(
+              prefixIcon: Icon(
                 Icons.search,
-                size: 19,
+                size: 30,
                 color: Color(0xff828282),
               ),
               hintText: 'Search live channels or streamers',
-              hintStyle: const TextStyle(
-                color: Color(0xff828282),
-              ),
             ),
           ),
         ),
       ],
+    );
+  }
+
+  OutlineInputBorder custumuOutlineInputBorder() {
+    return OutlineInputBorder(
+      borderSide: const BorderSide(
+        color: Color(0xffFFFFFF),
+        //this has no effect
+      ),
+      borderRadius: BorderRadius.circular(16.0),
     );
   }
 }
