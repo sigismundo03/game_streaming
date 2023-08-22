@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:game_streaming/app/domain/entities/game_categories.dart';
-import 'package:game_streaming/app/domain/entities/game_live.dart';
+import 'package:game_streaming/app/Domain/entities/game_categories.dart';
+import 'package:game_streaming/app/Domain/entities/game_live.dart';
 
 class WatchLive {
   List<GameLive> listGameLive;

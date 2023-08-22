@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:game_streaming/app/domain/entities/game_live.dart';
+import '../../Domain/entities/game_live.dart';
 
 class GameLiveDTO extends GameLive {
   String nameGame;

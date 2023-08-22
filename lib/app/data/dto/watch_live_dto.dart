@@ -1,6 +1,6 @@
-import 'package:game_streaming/app/domain/entities/game_categories.dart';
-import 'package:game_streaming/app/domain/entities/game_live.dart';
-import 'package:game_streaming/app/domain/entities/watch_live.dart';
+import '../../Domain/entities/game_categories.dart';
+import '../../Domain/entities/game_live.dart';
+import '../../Domain/entities/watch_live.dart';
 
 class WatchLiveDto extends WatchLive {
   List<GameLive> listGameLiveDto;

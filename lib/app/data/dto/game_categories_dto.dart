@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:game_streaming/app/domain/entities/game_categories.dart';
+import '../../Domain/entities/game_categories.dart';
 
 class GameCategoriesDTo extends GameCategories {
   String nameCategorie;

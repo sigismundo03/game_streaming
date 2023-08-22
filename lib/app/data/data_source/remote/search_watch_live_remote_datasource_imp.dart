@@ -3,7 +3,8 @@ import 'package:game_streaming/app/data/data_source/search_game_categories_datas
 import 'package:game_streaming/app/data/data_source/search_game_live_datasource_interface.dart';
 import 'package:game_streaming/app/data/data_source/search_watch_live_datasource_interface.dart';
 import 'package:game_streaming/app/data/dto/watch_live_dto.dart';
-import 'package:game_streaming/app/domain/entities/watch_live.dart';
+
+import '../../../Domain/entities/watch_live.dart';
 
 class SearchWatchLiveRemoteDataSourceImp
     implements SearchWatchLiveDataSourceInterfarce {

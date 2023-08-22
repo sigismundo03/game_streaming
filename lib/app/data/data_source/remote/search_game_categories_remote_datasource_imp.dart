@@ -4,7 +4,8 @@ import 'package:either_dart/either.dart';
 import 'package:flutter/services.dart';
 import 'package:game_streaming/app/data/data_source/search_game_categories_datasource_interface.dart';
 import 'package:game_streaming/app/data/dto/game_categories_dto.dart';
-import 'package:game_streaming/app/domain/entities/game_categories.dart';
+
+import '../../../Domain/entities/game_categories.dart';
 
 class SearchGameCategoriesRemoteDataSource
     implements SearchGameCategoriesDataSourceInterface {

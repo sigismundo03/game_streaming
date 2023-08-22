@@ -9,10 +9,10 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: const CustumBottomNavigatiobarWidget(),
       body: LayoutBuilder(builder: (context, constraints) {
-        return Column(
+        return const Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             SearchLive(),
             GameLiveWidget(),
             GameCategoriesWidget(),
@@ -32,8 +32,8 @@ class TittleGameWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
+    return const Padding(
+      padding: EdgeInsets.only(
         right: 24,
         left: 24,
         bottom: 24,
@@ -41,7 +41,7 @@ class TittleGameWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: const [
+        children: [
           Text(
             'Top Streamers Live',
             style: TextStyle(
@@ -178,8 +178,8 @@ class GameLiveWidget extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                               color: const Color(0xF2333333),
                             ),
-                            child: Padding(
-                              padding: const EdgeInsets.only(
+                            child: const Padding(
+                              padding: EdgeInsets.only(
                                 bottom: 9,
                                 top: 9,
                                 left: 10,
@@ -187,7 +187,7 @@ class GameLiveWidget extends StatelessWidget {
                               ),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
-                                children: const [
+                                children: [
                                   Icon(
                                     Icons.remove_red_eye,
                                     color: Color(0xffE0E0E0),
@@ -362,8 +362,8 @@ class TopLiveWidget extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10),
                             color: const Color(0xF2333333),
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.only(
+                          child: const Padding(
+                            padding: EdgeInsets.only(
                               bottom: 9,
                               top: 9,
                               left: 10,
@@ -371,7 +371,7 @@ class TopLiveWidget extends StatelessWidget {
                             ),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
-                              children: const [
+                              children: [
                                 Icon(
                                   Icons.remove_red_eye,
                                   color: Color(0xffE0E0E0),
